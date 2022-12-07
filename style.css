@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lora&display=swap');
+@import url('https://css.gg/git-pull.css');
+@import url('https://css.gg/code.css');
+
+:root {
+ --cor1: #A52502;
+ --cor2: #390D02;
+ --cor3: #000B0D;
+ --cor4: #154B52;
+ --cor5: #1C8394;
+ --sombra: #00000085;
+ --cor-texto:#FDFDF3;
+ --fonte-titulo: 'Lato', sans-serif;
+ --fonte-texto: 'Lora', serif;
+ } 
+
+ /*Gerais*/
+ 
+ * {
+  padding: 0px;
+  margin: 0px;
+ }
+
+ body, html {
+  background-color: var(--cor5);
+ }
+ 
+ a:link, a:visited, a:active {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--cor-texto);
+ }
+
+ /*Nav bar*/
+
+ nav ul {
+  display: flex;
+  justify-content: center;
+  
+ }
+ 
+ nav li {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-left: 30px;
+ }
+ 
+ nav {
+  z-index: 5;
+  margin-bottom: 20px;
+  background-color: var(--cor3);
+  color: white;
+  font-family: var(--fonte-titulo);
+  position: static;
+  width: 100%;
+  height: 30px;
+  box-shadow: 2px 2px 5px var(--sombra);
+ }
+
+ /*Sobre mim*/
+
+ #eu {
+  width: 230px;
+  height: 241.33px;
+  float: left;
+  margin: 25px;
+ }
+
+ #front {
+  color: var(--cor3);
+  font-weight: bolder;
+ }
+
+ #texto-prin {
+  font-family: var(--fonte-titulo);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--cor-texto);
+ }
+
+ #texto-seg {
+  font-family: 'lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  color: var(--cor-texto);
+ }
+
+ #sobre-mim {
+  background-color: var(--cor4);
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  width: 917px;
+  height: 293px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 10px;
+ }
+
+ #conjunto{
+  display: flex;
+  align-items: center;
+ }
+
+ /*Skills*/
+
+ section#Skills > h1 {
+  margin: 30px;
+  margin-left: 80px;
+  color: var(--cor-texto);
+  font-family: var(--fonte-titulo);
+ }
+
+ #container-skills {
+  width: 60vw;
+  height: 310px;
+  margin: 0 auto;
+  background: #000B0D;
+  box-shadow: 2px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px
+ }
+
+ .linguagem {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--cor-texto);
+  padding: 20px;
+ }
+
+ #html-barra {
+  margin-left: 20px;
+  height: 20px;
+  width: 35vw;
+  background: var(--cor1);
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+ }
+ 
+ #css-barra {
+  margin-left: 20px;
+  height: 20px;
+  width: 30vw;
+  background: var(--cor4);
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+ }
+
+ #js-barra {
+  margin-left: 20px;
+  height: 20px;
+  width: 20vw;
+  background: var(--cor5);
+  border-radius: 0px 20px 20px 0px;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+ }
+
+ /*projetos*/
+
+ section#projetos > h1 {
+  margin: 30px;
+  margin-left: 80px;
+  color: var(--cor-texto);
+  font-family: var(--fonte-titulo);
+ }
+
+ article.box-projetos > h3 {
+  color: var(--cor4);
+  font-family: var(--fonte-titulo);
+  padding-top: 10px;
+ } 
+
+ article.box-projetos > p {
+  color: var(--cor-texto);
+  font-family: var(--fonte-texto);
+ } 
+ 
+ .none {
+  padding: 10px;
+  width: 151px;
+  height: 93px;
+  float: left;
+ }
+
+ .box-projetos {
+  background: var(--cor3);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+ }
+
+ #caixas-projetos {
+  margin: 5vw;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 40vw 40vw;
+ }
+
+ .link-projetos {
+  text-decoration: none;
+  margin: 15px;
+ }
+
+ .git {
+  display: inline-block;
+  background-color: var(--cor1);
+  padding: 4px;
+  margin: 10px;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-texto);
+  border-radius: 10px;
+ 
+ }
+
+ .site {
+  display: inline-block;
+  background-color: var(--cor2);
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 10px;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-texto);
+  border-radius: 10px;
+ }
+
+ /*footer*/
+
+ footer {
+  background-color: var(--cor3);
+  padding: 10px;
+  text-align: center;
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+ }
+
